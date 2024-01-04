@@ -19,6 +19,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-My name is Dan (Alaina) Wang, a Postdoc at the [University of Copenhagen](https://www.ku.dk/english/) associated with the [AI Pioneer Centre](https://www.aicentre.dk/), where I am advised by Professor [Serge Belongie](https://www.belongielab.org/).  My research interests lie in the intersection of Computer Vision, Machine Learning, and Computer Graphics. I received my Ph.D. degree from the [University of British Columbia](https://www.ubc.ca/), where I was supervised by Prof. Z. Jane Wang and Prof. Tim Salcudean.
+My name is Dan (Alaina) Wang, a Postdoc at the [University of Copenhagen](https://www.ku.dk/english/) associated with the [AI Pioneer Centre](https://www.aicentre.dk/), where I am advised by Professor [Serge Belongie](https://www.belongielab.org/).  My research interests lie in the intersection of Computer Vision, Machine Learning, and Computer Graphics. I received my Ph.D. degree from the [University of British Columbia](https://www.ubc.ca/), where I was supervised by Professor Z. Jane Wang and Professor Tim Salcudean. 
 
 **Research interests**: 3D reconstruction, novel view synthesis, generative models, and explainable AI.
