@@ -21,7 +21,7 @@ repository               : "danalaina/danalaina.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "photo_dan.jpg"
+  avatar           : "photo_dan.JPG"
   name             : "Dan Wang"
   pronouns         : # example: "she/her"  
   bio              : "Postdoc at the University of Copenhagen / Pioneer Centre for AI. PhD from the University of British Columbia."
