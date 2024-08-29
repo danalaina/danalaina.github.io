@@ -20,6 +20,13 @@ Sebastian Loeschcke, Dan Wang, Christian Leth-Espensen, Serge Belongie, J Michae
 *International Conference on Machine Learning (ICML 2024)*\
 <!-- [project website](https://langnico.github.io/fine-grained-osr/) -->
 
+**StyleMorpheus: A Style-Based 3D-Aware Morphable Face Model**\
+Peizhi Yan, Rabab Ward, Dan Wang, Qiang Tang, and Shan Du\
+*IEEE Transactions on Multimedia* (Under review, 2024)\
+
+<!-- **InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering**\
+Dan Wang, and Xinrui Cui\
+*ACM Multimedia Conference* (2024)\ -->
 
 **Contrastive-enhanced Domain Generalization with Federated Learning**\
 Xinhui Yu, Dan Wang, Martin McKeown, and Z. Jane Wang\
