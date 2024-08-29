@@ -118,7 +118,7 @@ Xinrui Cui, **Dan Wang**, and Z. Jane Wang\
 
 **Collaborative sparse unmixing of hyperspectral data using L2,P norm**\
 **Dan Wang**, Zhenwei Shi, and Wei Tang\
-*International Geoscience and Remote Sensing Symposium (IGARSS 2019)*\
+*International Geoscience and Remote Sensing Symposium (IGARSS 2016)*\
 [article](https://ieeexplore.ieee.org/document/7730820) |
 <!-- [pdf](https://arxiv.org/pdf/1904.13270.pdf) | 
 [download maps](https://share.phys.ethz.ch/~pf/nlangdata/gabon_canopy_height_2017.zip) -->
