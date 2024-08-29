@@ -26,10 +26,7 @@ Zhaochong An, Guolei Sun, Yun Liu, Fayao Liu, Zongwei Wu, **Dan Wang**, Luc Van 
 Peizhi Yan, Rabab Ward, Dan Wang, Qiang Tang, and Shan Du\
 *IEEE Transactions on Multimedia* (Under review, 2024) -->
 
-**Learning Disentangled Features for Nerf-Based Face Reconstruction**\
-Peizhi Yan, Rabab Ward, **Dan Wang**, Qiang Tang, and Shan Du\
-*International Conference on Image Processing (ICIP 2023)*\
-[article](https://ieeexplore.ieee.org/document/10222432) |
+
 <!-- **InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering**\
 Dan Wang, and Xinrui Cui\
 *ACM Multimedia Conference* (2024)\ -->
@@ -42,6 +39,11 @@ Xinhui Yu, **Dan Wang**, Martin McKeown, and Z. Jane Wang\
 [project website](https://langnico.github.io/globalcanopyheight/) |
 [explore maps](https://nlang.users.earthengine.app/view/global-canopy-height-2020) | 
 [code](https://github.com/langnico/global-canopy-height-model) -->
+
+**Learning Disentangled Features for Nerf-Based Face Reconstruction**\
+Peizhi Yan, Rabab Ward, **Dan Wang**, Qiang Tang, and Shan Du\
+*International Conference on Image Processing (ICIP 2023)*\
+[article](https://ieeexplore.ieee.org/document/10222432) |
 
 **Cross-Domain Few-Shot Contrastive Learning for Hyperspectral Images Classification**\
 Suhua Zhang, Zhikui Chen, **Dan Wang**, and Z. Jane Wang\
@@ -69,7 +71,7 @@ Dr. Habil. Bertrand Le Saux (European Space Agency)\
 
 **Multi-View 3D Reconstruction With Transformers**\
 **Dan Wang**, Xinrui Cui, Xun Chen, Zhengxia Zou, Tianyang Shi, Septimiu Salcudean, Z. Jane Wang, and Rabab Ward\
-*International Conference on Computer Vision (ICCV 2021, Oral)*\
+*International Conference on Computer Vision (ICCV 2021, **Oral**)*\
 [article](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Multi-View_3D_Reconstruction_With_Transformers_ICCV_2021_paper.pdf) | 
 <!-- [pdf](https://arxiv.org/pdf/2107.07431.pdf) | 
 [explore maps](https://nlang.users.earthengine.app/view/canopy-height-and-carbon-stock-southeast-asia-2020) | 
@@ -101,7 +103,7 @@ Xinrui Cui, **Dan Wang**, and Z. Jane Wang\
 
 **Robust Sparse Unmixing for Hyperspectral Imagery**\
 **Dan Wang**, Zhenwei Shi, and Xinrui Cui\
-*ISPRS Journal of Photogrammetry and Remote Sensing* (2018)\
+*IEEE Transactions on Geoscience and Remote Sensing* (2018)\
 [article](https://ieeexplore.ieee.org/document/8082740) |
 <!-- **[AWARDED BEST PAPER OF THE ISPRS JOURNAL IN 2018](https://www.isprs.org/society/awards/helava/2018.aspx)**\
 [pdf](https://arxiv.org/pdf/1910.02675.pdf) | 
