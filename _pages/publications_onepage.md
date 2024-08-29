@@ -45,6 +45,11 @@ Peizhi Yan, Rabab Ward, **Dan Wang**, Qiang Tang, and Shan Du\
 *International Conference on Image Processing (ICIP 2023)*\
 [article](https://ieeexplore.ieee.org/document/10222432) |
 
+**Generalizable neural radiance fields for novel view synthesis with transformer**\
+**Dan Wang**, Xinrui Cui, Septimiu Salcudean and Z. Jane Wang\
+*ArXiv* (2022)\
+[arxiv](https://arxiv.org/abs/2206.05375) | 
+
 **Cross-Domain Few-Shot Contrastive Learning for Hyperspectral Images Classification**\
 Suhua Zhang, Zhikui Chen, **Dan Wang**, and Z. Jane Wang\
 *IEEE Geoscience and Remote Sensing Letters* (2022)\
@@ -76,6 +81,11 @@ Dr. Habil. Bertrand Le Saux (European Space Agency)\
 <!-- [pdf](https://arxiv.org/pdf/2107.07431.pdf) | 
 [explore maps](https://nlang.users.earthengine.app/view/canopy-height-and-carbon-stock-southeast-asia-2020) | 
 [download maps](http://doi.org/10.5281/zenodo.5012448) -->
+
+**Chain: Concept-harmonized hierarchical inference interpretation of deep convolutional neural networks**\
+**Dan Wang**, Xinrui Cui, and Z. Jane Wang\
+*ArXiv* (2020)\
+[arxiv](https://arxiv.org/abs/2002.01660) |
 
 **Feature-Flow Interpretation of Deep Convolutional Neural Networks**\
 Xinrui Cui, **Dan Wang**, and Z. Jane Wang\
