@@ -18,9 +18,9 @@ News
 
 -   Mar. 2024: One paper accepted to CVPR 2024.
 
-Honors and Awards
-======
-<!-- **Honors and Awards**:  -->
+<!-- Honors and Awards
+====== -->
+**Honors and Awards**: 
 
 - NSERC Postdoctoral Fellowship (2023-2025)
 - International Doctoral Fellowship (2018-2023)
