@@ -11,7 +11,7 @@ My name is Dan (Alaina) Wang, a Postdoc at the [University of Copenhagen](https:
 
 **Research interests**: 3D reconstruction, novel view synthesis, generative models, and explainable AI.
 
-**Awards**: NSERC Postdoctoral Fellowship (2023-2025), International Doctoral Fellowship (2018-2023)
+**Awards**: NSERC Postdoctoral Fellowship (2023-2025), International Doctoral Fellowship (2018-2023), Faculty of Applied Science Graduate Award (2018-2023), President's Academic Excellence Initiative PhD Award (2020-2022), Special UBC Graduate Scholarship (2018)
 
 News
 ======

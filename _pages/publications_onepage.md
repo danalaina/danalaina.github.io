@@ -85,7 +85,7 @@ Xinrui Cui, **Dan Wang**, and Z. Jane Wang\
 [download map]( https://doi.org/10.5281/zenodo.5112904) -->
 
 **CHIP: Channel-Wise Disentangled Interpretation of Deep Convolutional Neural Networks**\
-Xinrui Cui\*, **Dan Wang\***, and Z. Jane Wang\
+Xinrui Cui\*, **Dan Wang\***, and Z. Jane Wang (* co-first author)\
 *IEEE Transactions on Neural Networks and Learning Systems* (2020)\
 [article](https://ieeexplore.ieee.org/abstract/document/8924894) |
 <!-- [pdf](https://doi.org/10.5194/hess-25-2567-2021) | 
