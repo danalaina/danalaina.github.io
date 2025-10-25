@@ -22,7 +22,7 @@ Sebastian Loeschcke, **Dan Wang**, Christian Leth-Espensen, Serge Belongie, J Mi
 <!-- *International Conference on Machine Learning (ICML 2024)*\ -->
 [Paper](https://arxiv.org/abs/2406.04332) |
 [project website](https://sebulo.github.io/PuTT_website/) |
-[code](https://github.com/sebulo/PuTT) |
+[code](https://github.com/sebulo/PuTT) 
 
 **InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering** *ACM-MM 2024*\
 **Dan Wang**, Xinrui Cui\
@@ -35,7 +35,7 @@ Zhaochong An, Guolei Sun, Yun Liu, Fayao Liu, Zongwei Wu, **Dan Wang**, Luc Van 
 <!-- *Computer Vision and Pattern Recognition (CVPR 2024)*\ -->
 [Paper](https://arxiv.org/abs/2403.00592) |
 <!-- [project website](https://vishalned.github.io/mmearth/) | -->
-[code](https://github.com/ZhaochongAn/COSeg) |
+[code](https://github.com/ZhaochongAn/COSeg) 
 <!-- [code-model](https://github.com/vishalned/MMEarth-train)  -->
 
 

@@ -13,9 +13,10 @@ My name is Dan (Alaina) Wang, and I am a Postdoc at the [University of Californi
 
 My research interests lie at the intersection of Computer Vision, Machine Learning, and Computer Graphics, with a focus on developing advanced AI techniques that enable machines to perceive, understand, and synthesize complex visual environments. Throughout my academic journey, I have cultivated deep expertise across multiple dimensions of these fields. My doctoral research advanced the state-of-the-art in 3D computer vision and explainable AI. Currently, I am particularly interested in pushing the boundaries of neural 3D representations, photorealistic rendering, generative models for visual content creation, and interpretable AI systems. By bridging perception and synthesis, I aim to develop AI systems that not only understand complex 3D scenes with human-like accuracy but can also generate and manipulate visual content in ways that are both powerful and transparent to users.
 <!-- building upon foundational work in remote sensing and computer vision during my master's studies -->
+
 News
 ======
--   Sep. 2025: One paper accepted to SigGraph Asia 2025.
+-   Sep. 2025: One paper accepted to SIGGRAPH Asia 2025.
 
 -   May 2024: One paper accepted to ICML 2024.
 
