@@ -7,13 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-My name is Dan (Alaina) Wang, a Postdoc Fellow at the [University of Copenhagen](https://www.ku.dk/english/) associated with the [AI Pioneer Centre](https://www.aicentre.dk/), where I am advised by Professor [Serge Belongie](https://www.belongielab.org/). I received my Ph.D. degree in Electrical and Computer Engineering at the [University of British Columbia](https://www.ubc.ca/), where I was supervised by Professor [Z. Jane Wang](https://people.ece.ubc.ca/~zjanew/) and Professor [Tim Salcudean](https://bmiai.ubc.ca/people/tim-salcudean). 
+My name is Dan (Alaina) Wang, and I am a Postdoc at the [University of California San Diego](https://cse.ucsd.edu/), where I am advised by Professor [Ravi Ramamoorthi](https://cseweb.ucsd.edu/~ravir/). Previously, I worked at the [University of Copenhagen](https://www.ku.dk/english/) in association with the [AI Pioneer Centre](https://www.aicentre.dk/), where I was advised by Professor [Serge Belongie](https://www.belongielab.org/). I received my Ph.D. degree in Electrical and Computer Engineering at the [University of British Columbia](https://www.ubc.ca/), where I was supervised by Professor [Z. Jane Wang](https://people.ece.ubc.ca/~zjanew/) and Professor [Tim Salcudean](https://bmiai.ubc.ca/people/tim-salcudean). 
 
+<!-- My research interests lie at the intersection of Computer Vision, Machine Learning, and Computer Graphics, with a focus on developing advanced AI techniques to enhance machine perception of the surrounding environment. Throughout my academic journey, I have cultivated expertise in various aspects of these fields. My Ph.D. research centered on 3D computer vision and explainable AI, building upon my master's work in remote sensing and computer vision. Currently, I am particularly interested in exploring cutting-edge topics such as 3D representation and rendering, generative models, and further advancements in explainable AI. By integrating these areas, I aim to contribute to the development of more sophisticated and interpretable AI systems capable of understanding and interacting with complex visual environments. -->
 
-My research interests lie at the intersection of Computer Vision, Machine Learning, and Computer Graphics, with a focus on developing advanced AI techniques to enhance machine perception of the surrounding environment. Throughout my academic journey, I have cultivated expertise in various aspects of these fields. My Ph.D. research centered on 3D computer vision and explainable AI, building upon my master's work in remote sensing and computer vision. Currently, I am particularly interested in exploring cutting-edge topics such as 3D representation and rendering, generative models, and further advancements in explainable AI. By integrating these areas, I aim to contribute to the development of more sophisticated and interpretable AI systems capable of understanding and interacting with complex visual environments.
-
+My research interests lie at the intersection of Computer Vision, Machine Learning, and Computer Graphics, with a focus on developing advanced AI techniques that enable machines to perceive, understand, and synthesize complex visual environments. Throughout my academic journey, I have cultivated deep expertise across multiple dimensions of these fields. My doctoral research advanced the state-of-the-art in 3D computer vision and explainable AI. Currently, I am particularly interested in pushing the boundaries of neural 3D representations, photorealistic rendering, generative models for visual content creation, and interpretable AI systems. By bridging perception and synthesis, I aim to develop AI systems that not only understand complex 3D scenes with human-like accuracy but can also generate and manipulate visual content in ways that are both powerful and transparent to users.
+<!-- building upon foundational work in remote sensing and computer vision during my master's studies -->
 News
 ======
+-   Sep. 2025: One paper accepted to SigGraph Asia 2025.
 
 -   May 2024: One paper accepted to ICML 2024.
 
@@ -29,7 +31,7 @@ News
 - President's Academic Excellence Initiative PhD Awards for three consecutive years (2020, 2021, 2022)
 - Special UBC Graduate Scholarship (2018)
 - Excellent Graduation Thesis for Master's Degree
-- Merit Graduate Student of Beihang University 
+<!-- - Merit Graduate Student of Beihang University  -->
 
 
 

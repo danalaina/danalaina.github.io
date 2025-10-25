@@ -24,11 +24,11 @@ author:
   avatar           : "WechatIMG246.jpg" #"photo_dan2.jpg"  # "photo_dan.JPG"
   name             : "Dan Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoc at the University of Copenhagen / Pioneer Centre for AI. PhD from the University of British Columbia."
-  location         : "Copenhagen, Denmark"
+  bio              : "Postdoc at the University California San Diego."
+  location         : "San Diego, California"
   employer         : # "Red Brick University"
   uri              : # URL
-  email            : "dawa@di.ku.dk" 
+  email            : "danwang@ucsd.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
