@@ -20,9 +20,9 @@ Peizhi Yan, Rabab Ward, **Dan Wang**, Qiang Tang, Shan Du\
 **Coarse-To-Fine Tensor Trains for Compact Visual Representations** *ICML 2024*\
 Sebastian Loeschcke, **Dan Wang**, Christian Leth-Espensen, Serge Belongie, J Michael Kastoryano and Sagie Benaim\
 <!-- *International Conference on Machine Learning (ICML 2024)*\ -->
-[Paper](https://arxiv.org/abs/2406.04332) |
-[project website](https://sebulo.github.io/PuTT_website/) |
-[code](https://github.com/sebulo/PuTT) 
+[Paper](https://arxiv.org/abs/2406.04332) 
+<!-- [project website](https://sebulo.github.io/PuTT_website/) |
+[code](https://github.com/sebulo/PuTT)  -->
 
 **InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering** *ACM-MM 2024*\
 **Dan Wang**, Xinrui Cui\
@@ -33,9 +33,9 @@ Sebastian Loeschcke, **Dan Wang**, Christian Leth-Espensen, Serge Belongie, J Mi
 **Rethinking Few-shot 3D Point Cloud Semantic Segmentation** *CVPR 2024*\
 Zhaochong An, Guolei Sun, Yun Liu, Fayao Liu, Zongwei Wu, **Dan Wang**, Luc Van Gool and Serge Belongie\
 <!-- *Computer Vision and Pattern Recognition (CVPR 2024)*\ -->
-[Paper](https://arxiv.org/abs/2403.00592) |
+[Paper](https://arxiv.org/abs/2403.00592) 
 <!-- [project website](https://vishalned.github.io/mmearth/) | -->
-[code](https://github.com/ZhaochongAn/COSeg) 
+<!-- [code](https://github.com/ZhaochongAn/COSeg)  -->
 <!-- [code-model](https://github.com/vishalned/MMEarth-train)  -->
 
 
