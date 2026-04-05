@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Wang</title>
+    <meta
+      name="description"
+      content="Dan Wang's academic homepage with research interests, vision, awards, publications, and contact information."
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #111111;
+        --muted: #4d4d4d;
+        --line: #d9d9d9;
+        --link: #0b57d0;
+        --link-hover: #083e95;
+        --max-width: 980px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--link);
+        outline-offset: 2px;
+      }
+
+      .page {
+        width: min(var(--max-width), calc(100vw - 2rem));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid #efefef;
+      }
+
+      .nav {
+        width: min(var(--max-width), calc(100vw - 2rem));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        min-height: 56px;
+      }
+
+      .brand {
+        color: var(--text);
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.98rem;
+      }
+
+      main {
+        padding: 1.5rem 0 3rem;
+      }
+
+      .intro {
+        display: grid;
+        gap: 1.5rem;
+        align-items: start;
+      }
+
+      .profile {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #f1f1f1;
+        border: 1px solid #dddddd;
+        overflow: hidden;
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      .title-lines {
+        color: var(--muted);
+      }
+
+      .link-line {
+        color: var(--muted);
+      }
+
+      .topics {
+        margin: 0;
+        padding-left: 1.15rem;
+      }
+
+      .topics li,
+      .simple-list li {
+        margin: 0.25rem 0;
+      }
+
+      .content p {
+        margin: 0 0 1rem;
+      }
+
+      section {
+        padding-top: 1.75rem;
+      }
+
+      h2 {
+        margin: 0 0 0.8rem;
+        font-size: 1.3rem;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.45rem;
+      }
+
+      .simple-list {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .vision-list {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .vision-list li {
+        margin-bottom: 0.8rem;
+      }
+
+      .callout {
+        padding: 0.9rem 1rem;
+        border-left: 3px solid var(--line);
+        background: #fafafa;
+      }
+
+      .publication-list {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .publication {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      .publication:last-child {
+        border-bottom: 0;
+      }
+
+      .teaser-box {
+        width: 100%;
+        max-width: 240px;
+        /* aspect-ratio: ; 16 / 10; */
+        border: 1px solid #d4d4d4;
+        background: #f5f5f5;
+        color: #777777;
+        display: grid;
+        place-items: center;
+        font-size: 0.9rem;
+        overflow: hidden;
+      }
+      .teaser-box img,
+      .teaser-box video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .publication-title {
+        font-weight: 700;
+      }
+
+      .publication-meta,
+      .publication-note {
+        margin-top: 0.25rem;
+      }
+
+      .pub-heading {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.45rem;
+      }
+
+      .pub-switcher {
+        font-size: 0.96rem;
+        color: var(--muted);
+      }
+
+      .pub-switcher button {
+        appearance: none;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        color: var(--link);
+        cursor: pointer;
+        font: inherit;
+      }
+
+      .pub-switcher button:hover {
+        text-decoration: underline;
+      }
+
+      .pub-switcher button.active {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .pub-topic-line {
+        margin: 0 0 1rem;
+        color: var(--muted);
+      }
+
+      .pub-note-line {
+        margin: 0 0 1rem;
+        color: var(--muted);
+      }
+
+      .publication-extra {
+        margin-top: 0.25rem;
+      }
+
+      .topic-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .topic-group:last-child {
+        margin-bottom: 0;
+      }
+
+      .topic-group h3 {
+        margin: 0 0 0.75rem;
+        font-size: 1.08rem;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .footer {
+        padding: 1.5rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 320ms ease, transform 320ms ease;
+      }
+
+      @media (min-width: 760px) {
+        .intro {
+          grid-template-columns: 240px minmax(0, 1fr);
+        }
+
+        .publication {
+          grid-template-columns: 240px minmax(0, 1fr);
+          align-items: start;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 1ms !important;
+          animation: none !important;
+        }
+
+        .reveal,
+        .reveal.is-visible {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#about">Dan Wang</a>
+        <div class="nav-links">
+          <a href="#about">Home</a>
+          <a href="#publications">Publications</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section id="about" class="intro reveal">
+        <aside class="profile">
+          <div class="avatar" aria-hidden="true"><img src="images/photo/IMG246.jpg" alt="Photo"></div>
+          <div>
+            <h1>Dan Wang</h1>
+            <div class="title-lines">Postdoc</div>
+            <div class="title-lines">UC San Diego</div>
+            <div class="link-line">
+              <a href="https://scholar.google.com/citations?user=tHbMyNoAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+              <!-- / -->
+              <!-- <a href="https://twitter.com" target="_blank" rel="noreferrer">X</a> -->
+              /
+              <!-- <a href="https://cse.ucsd.edu" target="_blank" rel="noreferrer">UC San Diego</a> -->
+               <a href="mailto:danwang@ucsd.edu" target="_blank" rel="noreferrer">Email</a>
+            </div>
+          </div>
+          <!-- <div>
+            <strong>Current Research Topics</strong>
+            <ul class="topics">
+              <li>Neural 3D Representations</li>
+              <li>Physics-Grounded Dynamics</li>
+              <li>Generative AI</li>
+            </ul>
+          </div> -->
+        </aside>
+
+        <div class="content">
+          <p>
+            My name is Dan (Alaina) Wang, and I am a Postdoc at the
+            <a href="https://cse.ucsd.edu" target="_blank" rel="noreferrer">University of California San Diego</a>,
+            where I am advised by Professor
+            <a href="https://cseweb.ucsd.edu/~ravir/" target="_blank" rel="noreferrer">Ravi Ramamoorthi</a>.
+            Previously, I worked at the
+            <a href="https://www.ku.dk/english/" target="_blank" rel="noreferrer">University of Copenhagen</a>
+            in association with the
+            <a href="https://www.aicentre.dk" target="_blank" rel="noreferrer">AI Pioneer Centre</a>,
+            where I was advised by Professor
+            <a href="https://www.belongielab.org" target="_blank" rel="noreferrer">Serge Belongie</a>.
+            I received my Ph.D. degree in Electrical and Computer Engineering at the
+            <a href="https://www.ubc.ca" target="_blank" rel="noreferrer">University of British Columbia</a>,
+            where I was supervised by Professor
+            <a href="https://people.ece.ubc.ca/~zjanew/" target="_blank" rel="noreferrer">Z. Jane Wang</a>
+            and Professor
+            <a href="https://bme.ubc.ca/?directory=tim-salcudean" target="_blank" rel="noreferrer">Tim Salcudean</a>.
+            <!-- I obtained my Master's and Bachelor's degrees from Beihang University. -->
+          </p>
+          <p>
+            My research lies at the intersection of Computer Graphics, Computer Vision, and Artificial Intelligence, with the overarching goal of advancing AI systems that seamlessly integrate environmental understanding with adaptive interaction to enhance human life. I focus on developing next-generation 3D reconstruction and rendering methods for human characters and complex dynamic scenes. By unifying classical graphics principles with modern deep learning approaches, my work aims to build systems that are not only high-performing, but also interpretable and physically grounded.
+          </p>
+          <!-- <p>
+            Currently, I am particularly interested in pushing the boundaries of neural 3D representations,
+            photorealistic rendering, generative models for visual content creation, and interpretable AI systems.
+            By bridging perception and synthesis, I aim to develop AI systems that not only understand complex 3D scenes
+            with human-like accuracy but can also generate and manipulate visual content in ways that are both powerful and transparent to users.
+          </p> -->
+          <!-- <p>
+            My work centers on building advanced AI systems that can perceive, understand, and synthesize complex visual environments.
+            I am interested in methods that connect perception with synthesis, especially approaches that improve 3D understanding,
+            realistic rendering, controllable generation, and interpretability.
+          </p> -->
+        </div>
+      </section>
+
+      <section class="reveal">
+        <h2>Research Vision</h2>
+        <!-- <p>
+          My research operates at the convergence of <strong>Computer Graphics, Computer Vision, and Artificial Intelligence</strong>.
+          The ultimate goal of my work is to enhance human life through advanced AI systems that strike a balance between
+          environmental understanding and adaptive interaction. I am particularly driven by the development of a new generation of
+          3D reconstruction and rendering algorithms for human characters and complex scenes.
+        </p> -->
+        <p>
+          By bridging <strong>classical computer graphics pipelines</strong> with <strong>deep learning techniques</strong>,
+          I aim to create systems that are high-performing, interpretable, and physically grounded.
+        </p>
+        <ol class="vision-list">
+          <!-- <li><strong>High-Fidelity 3D Reconstruction:</strong> Developing robust methods for high-quality 3D reconstruction of real-world scenes from sparse or limited inputs.</li> -->
+          <li><strong>Physics-Informed World Simulation:</strong> Advance physics-grounded world models that faithfully capture real-world dynamics and enable realistic simulation of object interactions and material behaviors.</li>
+          <li><strong>Controllable &amp; Expressive Generative Model:</strong> Design generative frameworks that balance high-quality synthesis with fine-grained user control, enabling precise editing of geometry, appearance, and semantic attributes.</li>
+          <li><strong>Memory-Efficient 3D Representation:</strong> Develop representations that are simultaneously compact, high-quality, and easy to optimize, enabling efficient storage, transmission, and real-time rendering of complex 3D scenes.</li>
+          <li><strong>Explainable &amp; Trustworthy AI:</strong> Transform opaque neural models into transparent and interpretable systems with explicit semantic structure, ensuring reliable, controllable, and accountable AI-driven decisions.</li>
+        </ol>
+      </section>
+
+      <!-- <section class="reveal">
+        <h2>Join the Lab</h2>
+        <p>
+          <strong>I am actively looking for motivated PhD and MS students to join my research group.</strong>
+          If you are interested in Computer Vision, Graphics, or the future of 3D AI, I encourage you to reach out.
+          Our lab provides a collaborative environment focused on maintaining transparency, controllability, and user trust in AI systems.
+        </p>
+        <div class="callout">
+          <strong>Prospective Students:</strong> Please feel free to get in touch via email with your CV and a brief description of your research interests and how they align with our current goals.
+        </div>
+      </section> -->
+
+      <section class="reveal">
+        <h2>Selected Awards</h2>
+        <ul class="simple-list">
+          <li>NSERC Postdoctoral Fellowship (2023-2025)</li>
+          <li>International Doctoral Fellowship (2018-2023)</li>
+          <li>Faculty of Applied Science Graduate Awards for five consecutive years (2018, 2019, 2020, 2021, 2022)</li>
+          <li>President's Academic Excellence Initiative PhD Awards for three consecutive years (2020, 2021, 2022)</li>
+          <li>Special UBC Graduate Scholarship (2018)</li>
+          <li>Excellent Graduation Thesis for Master's Degree</li>
+        </ul>
+      </section>
+
+      <!-- <section class="reveal">
+        <h2>News</h2>
+        <ul class="simple-list">
+          <li>Sep. 2025: One paper accepted to SIGGRAPH Asia 2025.</li>
+          <li>May 2024: One paper accepted to ICML 2024.</li>
+          <li>Mar. 2024: One paper accepted to CVPR 2024.</li>
+        </ul>
+      </section> -->
+
+      <section id="publications" class="reveal">
+        <div class="pub-heading">
+          <h2 style="margin-bottom: 0; border-bottom: 0; padding-bottom: 0;">Publications</h2>
+          <div class="pub-switcher">
+            (
+            <button type="button" class="active" data-view="selected">Show selected</button>
+            /
+            <button type="button" data-view="date">Show all by date</button>
+            <!-- /
+            <button type="button" data-view="topic">Show all by topic</button> -->
+            )
+          </div>
+        </div>
+        <!-- <p class="pub-topic-line">Current Research Topics: World Models / Scene Analysis / Dynamics Simulation; Past Research Topic: Explainable AI</p> -->
+        <p class="pub-note-line">(* indicates equal contributions)</p>
+
+        <div class="pub-view" data-pub-view="selected">
+          <div class="publication-list">
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/teaser-physconvex.png" alt="PhysConvex teaser"></div>
+              <div>
+                <div class="publication-title">PhysConvex: Physics-Informed 3D Dynamic Convex Radiance Fields for Reconstruction and Simulation</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Serge Belongie, Ravi Ramamoorthi</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2602.18886" target="_blank" rel="noreferrer">arXiv 2026</a> / <a href="https://danalaina.github.io/physconvex_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+                <!-- <div class="publication-extra">Highlight</div> -->
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/teaser-SR.png" alt="SR teaser"></div>
+              <div>
+                <div class="publication-title">Revisiting the Perception-Distortion Trade-off with Spatial-Semantic Guided Super-Resolution</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Haiyan Sun, Shan Du, Z. Jane Wang, Zhaochong An, Serge Belongie, Xinrui Cui*</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2603.14112" target="_blank" rel="noreferrer">arXiv 2026</a> / <a href="https://hssmac.github.io/SpaSemSR_web/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><video src="images/publication_preview/siggraph25-cup_plane_relight.mp4" autoplay loop muted playsinline></video></div>
+              <div>
+                <div class="publication-title">Differentiable Light Transport with Gaussian Surfels via Adapted Radiosity for Efficient Relighting and Geometry Reconstruction</div>
+                <div class="publication-meta">Kaiwen Jiang, Jia-Mu Sun, Zilu Li, <strong>Dan Wang</strong>, Tzu-Mao Li, Ravi Ramamoorthi</div>
+                <div class="publication-note"><a href="https://cseweb.ucsd.edu/~ravir/kaiwensiga25.pdf" target="_blank" rel="noreferrer">SIGGRAPH Asia 2025 (ACM TOG)</a> / <a href="https://raymondjiangkw.github.io/radiositygs.github.io/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><video src="images/publication_preview/icml24-Girl_16k_mov8sek_squaare.mp4" autoplay loop muted playsinline></video></div>
+              <div>
+                <div class="publication-title">Coarse-To-Fine Tensor Trains for Compact Visual Representations</div>
+                <div class="publication-meta">Sebastian Loeschcke, <strong>Dan Wang</strong>, Christian Leth-Espensen, Serge Belongie, J Michael Kastoryano, Sagie Benaim</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2406.04332" target="_blank" rel="noreferrer">ICML 2024</a> / <a href="https://sebulo.github.io/PuTT_website/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-innerf.png" alt="InNeRF teaser"></div>
+              <div>
+                <div class="publication-title">InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/InNeRF_webpage/static/paper/InNeRF.pdf" target="_blank" rel="noreferrer">ACM Multimedia 2024</a> / <a href="https://danalaina.github.io/InNeRF_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-evolt.png" alt="EVolT teaser"></div>
+              <div>
+                <div class="publication-title">Multi-View 3D Reconstruction With Transformers</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Xun Chen, Zhengxia Zou, Tianyang Shi, Septimiu Salcudean, Z. Jane Wang, Rabab Ward</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2103.12957" target="_blank" rel="noreferrer">ICCV 2021 </a> <span style="color: red;">Oral Presentation</span> / <a href="https://danalaina.github.io/evolt_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+                <!-- <div class="publication-extra">Oral Presentation</div> -->
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-chain.jpg" alt="CHAIN teaser"></div>
+              <div>
+                <div class="publication-title">Interpreting Bottom-Up Decision-Making of CNNs via Hierarchical Inference</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Xun Chen, Rabab Ward, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/chain_webpage/static/paper/CHAIN.pdf" target="_blank" rel="noreferrer">IEEE TIP 2021 </a> / <a href="https://danalaina.github.io/chain_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/fig2-chip.png" alt="CHIP teaser"></div>
+              <div>
+                <div class="publication-title">CHIP: Channel-Wise Disentangled Interpretation of Deep Convolutional Neural Networks</div>
+                <div class="publication-meta">Xinrui Cui, <strong>Dan Wang</strong>, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/chip_webpage/static/paper/CHIP.pdf" target="_blank" rel="noreferrer">IEEE TNNLS 2020 </a> / <a href="https://danalaina.github.io/chip_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="pub-view hidden" data-pub-view="date">
+          <div class="publication-list">
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/teaser-physconvex.png" alt="PhysConvex teaser"></div>
+              <div>
+                <div class="publication-title">PhysConvex: Physics-Informed 3D Dynamic Convex Radiance Fields for Reconstruction and Simulation</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Serge Belongie, Ravi Ramamoorthi</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2602.18886" target="_blank" rel="noreferrer">arXiv 2026</a> / <a href="https://danalaina.github.io/physconvex_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/teaser-SR.png" alt="SR teaser"></div>
+              <div>
+                <div class="publication-title">Revisiting the Perception-Distortion Trade-off with Spatial-Semantic Guided Super-Resolution</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Haiyan Sun, Shan Du, Z. Jane Wang, Zhaochong An, Serge Belongie, Xinrui Cui*</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2603.14112" target="_blank" rel="noreferrer">arXiv 2026</a> / <a href="https://hssmac.github.io/SpaSemSR_web/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/teaser-YXLiu.png" alt="SR teaser"></div>
+              <div>
+                <div class="publication-title">Interpretable Concept Evolution Flow in Diffusion Models</div>
+                <div class="publication-meta">Yuxuan Liu, <strong>Dan Wang</strong>, Xinrui Cui</div>
+                <div class="publication-note"><a href="https://xrcui.github.io/EvolutionFlow_webpage/" target="_blank" rel="noreferrer">Project Page</a> / Coming soon, 2026</div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><video src="images/publication_preview/siggraph25-cup_plane_relight.mp4" autoplay loop muted playsinline></video></div>
+              <div>
+                <div class="publication-title">Differentiable Light Transport with Gaussian Surfels via Adapted Radiosity for Efficient Relighting and Geometry Reconstruction</div>
+                <div class="publication-meta">Kaiwen Jiang, Jia-Mu Sun, Zilu Li, <strong>Dan Wang</strong>, Tzu-Mao Li, Ravi Ramamoorthi</div>
+                <div class="publication-note"><a href="https://cseweb.ucsd.edu/~ravir/kaiwensiga25.pdf" target="_blank" rel="noreferrer">SIGGRAPH Asia 2025 (ACM TOG)</a> / <a href="https://raymondjiangkw.github.io/radiositygs.github.io/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/neurocomputing25-3d_aware_demo.gif" alt="InNeRF teaser"></div>
+              <div>
+                <div class="publication-title">StyleMorpheus: Learning a StyleGAN-based 3D-aware morphable face model with a disentangled style space</div>
+                <div class="publication-meta">Peizhi Yan, Rabab Ward, <strong>Dan Wang</strong>, Qiang Tang, Shan Du</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2503.11792" target="_blank" rel="noreferrer">Neurocomputing 2025</a> / <a href="https://peizhiyan.github.io/docs/morpheus/index.html" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><video src="images/publication_preview/icml24-Girl_16k_mov8sek_squaare.mp4" autoplay loop muted playsinline></video></div>
+              <div>
+                <div class="publication-title">Coarse-To-Fine Tensor Trains for Compact Visual Representations</div>
+                <div class="publication-meta">Sebastian Loeschcke, <strong>Dan Wang</strong>, Christian Leth-Espensen, Serge Belongie, J Michael Kastoryano, Sagie Benaim</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2406.04332" target="_blank" rel="noreferrer">ICML 2024</a> / <a href="https://sebulo.github.io/PuTT_website/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-innerf.png" alt="InNeRF teaser"></div>
+              <div>
+                <div class="publication-title">InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/InNeRF_webpage/static/paper/InNeRF.pdf" target="_blank" rel="noreferrer">ACM Multimedia 2024</a> / <a href="https://danalaina.github.io/InNeRF_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/cvpr24-COSeg.jpg" alt="COSeg teaser"></div>
+              <div>
+                <div class="publication-title">Rethinking Few-shot 3D Point Cloud Semantic Segmentation</div>
+                <div class="publication-meta">Zhaochong An, Guolei Sun, Yun Liu, Fayao Liu, Zongwei Wu, <strong>Dan Wang</strong>, Luc Van Gool, Serge Belongie</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2403.00592" target="_blank" rel="noreferrer">CVPR 2024</a> / <a href="https://github.com/ZhaochongAn/COSeg?tab=readme-ov-file" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/TAI23-workflow.jpeg" alt="InNeRF teaser"></div>
+              <div>
+                <div class="publication-title">Contrastive-enhanced Domain Generalization with Federated Learning</div>
+                <div class="publication-meta">Xinhui Yu, <strong>Dan Wang</strong>, Martin McKeown, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10192272" target="_blank" rel="noreferrer">IEEE TAI 2023</a> 
+                  <!-- / 
+                  <a href="https://danalaina.github.io/InNeRF_webpage/" target="_blank" rel="noreferrer">Project Page</a>  -->
+                </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/icip23-framework.jpg" alt="HeadNerf+ teaser"></div>
+              <div>
+                <div class="publication-title">Learning Disentangled Features for Nerf-Based Face Reconstruction</div>
+                <div class="publication-meta">Peizhi Yan, Rabab Ward, <strong>Dan Wang</strong>, Qiang Tang, Shan Du</div>
+                <div class="publication-note"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10222432" target="_blank" rel="noreferrer">ICIP 2023</a> 
+                  / 
+                  <a href="https://peizhiyan.github.io/docs/headnerf+/index.html" target="_blank" rel="noreferrer">Project Page</a> 
+                </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/GRSL22-framework.png" alt="GRSL teaser"></div>
+              <div>
+                <div class="publication-title">Cross-Domain Few-Shot Contrastive Learning for Hyperspectral Images Classification</div>
+                <div class="publication-meta">Suhua Zhang, Zhikui Chen, <strong>Dan Wang</strong>, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9970573" target="_blank" rel="noreferrer">IEEE GRSL 2022</a> 
+                  <!-- / 
+                  <a href="https://danalaina.github.io/InNeRF_webpage/" target="_blank" rel="noreferrer">Project Page</a>  -->
+                </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/TIM22-framework.jpeg" alt="IEEE TIM 2022 teaser"></div>
+              <div>
+                <div class="publication-title">Transformer-Based End-to-End Anatomical and Functional Image Fusion</div>
+                <div class="publication-meta">Jing Zhang, Aiping Liu, <strong>Dan Wang</strong>, Yu Liu, Z. Jane Wang, Xun Chen</div>
+                <div class="publication-note"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10192272" target="_blank" rel="noreferrer">IEEE TIM 2022</a> 
+                  <!-- / 
+                  <a href="https://danalaina.github.io/InNeRF_webpage/" target="_blank" rel="noreferrer">Project Page</a>  -->
+                </div>
+              </div>
+            </article>            
+
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-evolt.png" alt="EVolT teaser"></div>
+              <div>
+                <div class="publication-title">Multi-View 3D Reconstruction With Transformers</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Xun Chen, Zhengxia Zou, Tianyang Shi, Septimiu Salcudean, Z. Jane Wang, Rabab Ward</div>
+                <div class="publication-note"><a href="https://arxiv.org/pdf/2103.12957" target="_blank" rel="noreferrer">ICCV 2021 </a> <span style="color: red;">Oral Presentation</span> / <a href="https://danalaina.github.io/evolt_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-chain.jpg" alt="CHAIN teaser"></div>
+              <div>
+                <div class="publication-title">Interpreting Bottom-Up Decision-Making of CNNs via Hierarchical Inference</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Xun Chen, Rabab Ward, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/chain_webpage/static/paper/CHAIN.pdf" target="_blank" rel="noreferrer">IEEE TIP 2021 </a> / <a href="https://danalaina.github.io/chain_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/fig2-chip.png" alt="CHIP teaser"></div>
+              <div>
+                <div class="publication-title">CHIP: Channel-Wise Disentangled Interpretation of Deep Convolutional Neural Networks</div>
+                <div class="publication-meta">Xinrui Cui, <strong>Dan Wang</strong>, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/chip_webpage/static/paper/CHIP.pdf" target="_blank" rel="noreferrer">IEEE TNNLS 2020 </a> / <a href="https://danalaina.github.io/chip_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/showcase-flowin.jpg" alt="FLOWIN teaser"></div>
+              <div>
+                <div class="publication-title">Feature-Flow Interpretation of Deep Convolutional Neural Networks</div>
+                <div class="publication-meta">Xinrui Cui, <strong>Dan Wang</strong>, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/flowin_webpage/static/paper/FLOWIN.pdf" target="_blank" rel="noreferrer">IEEE TMM 2020 </a> / <a href="https://danalaina.github.io/flowin_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/model0-mint.jpg" alt="MINT teaser"></div>
+              <div>
+                <div class="publication-title">Multi-Scale Interpretation Model for Convolutional Neural Networks: Building Trust Based on Hierarchical Interpretation</div>
+                <div class="publication-meta">Xinrui Cui, <strong>Dan Wang</strong>, Z. Jane Wang</div>
+                <div class="publication-note"><a href="https://danalaina.github.io/mint_webpage/static/paper/MINT.pdf" target="_blank" rel="noreferrer">IEEE TMM 2019 </a> / <a href="https://danalaina.github.io/mint_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/fig-SPaUnM.png" alt="FLOWIN teaser"></div>
+              <div>
+                <div class="publication-title">Robust Sparse Unmixing for Hyperspectral Imagery</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Zhenwei Shi, Xinrui Cui</div>
+                <div class="publication-note"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8082740" target="_blank" rel="noreferrer">IEEE TGRS 2018 </a> 
+                  <!-- / <a href="https://danalaina.github.io/flowin_webpage/" target="_blank" rel="noreferrer">Project Page</a> -->
+                </div>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/flow-SLSeg.jpeg" alt="teaser"></div>
+              <div>
+                <div class="publication-title">Multi-feature Sea-land Segmentation based on Pixel-wise Learning for Optical Remote-sensing Imagery</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Xinrui Cui, Fengying Xie, Zhiguo Jiang, Zhenwei Shi</div>
+                <div class="publication-note"><a href="https://www.tandfonline.com/doi/full/10.1080/01431161.2017.1317938" target="_blank" rel="noreferrer">IJRS 2017 </a> 
+                  <!-- / <a href="https://danalaina.github.io/flowin_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div> -->
+              </div>
+            </article>
+            
+            <article class="publication">
+              <div class="teaser-box"><img src="images/publication_preview/IGARSS16-abundancemap.jpeg" alt="teaser"></div>
+              <div>
+                <div class="publication-title">Collaborative sparse unmixing of hyperspectral data using L2,P norm</div>
+                <div class="publication-meta"><strong>Dan Wang</strong>, Zhenwei Shi, Wei Tang</div>
+                <div class="publication-note"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7730820" target="_blank" rel="noreferrer">IGARSS 2016 </a> 
+                  <!-- / <a href="https://danalaina.github.io/flowin_webpage/" target="_blank" rel="noreferrer">Project Page</a> </div> -->
+              </div>
+            </article>
+                      
+          </div>
+        </div>
+
+        <div class="pub-view hidden" data-pub-view="topic">
+          <div class="topic-group">
+            <h3>World Models / Physics-Grounded Dynamics</h3>
+            <div class="publication-list">
+              <article class="publication">
+                <div class="teaser-box"><img src="images/publication_preview/teaser-physconvex.png" alt="PhysConvex teaser"></div>
+                <div>
+                  <div class="publication-title">PhysConvex: Physics-Informed 3D Dynamic Convex Radiance Fields for Reconstruction and Simulation</div>
+                  <div class="publication-meta">Dan Wang, Xinrui Cui*, Serge Belongie, Ravi Ramamoorthi</div>
+                  <div class="publication-note"><a href="https://danalaina.github.io/physconvex_webpage/" target="_blank" rel="noreferrer">Website</a> / arXiv 2026</div>
+                </div>
+              </article>
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">Interpretable Concept Evolution Flow in Diffusion Models</div>
+                  <div class="publication-meta">Yuxuan Liu, Dan Wang, Xinrui Cui*</div>
+                  <div class="publication-note"><a href="https://xrcui.github.io/EvolutionFlow_webpage/" target="_blank" rel="noreferrer">Website</a> / Coming soon, 2026</div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="topic-group">
+            <h3>Scene Analysis / Reconstruction</h3>
+            <div class="publication-list">
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">Multi-View 3D Reconstruction With Transformers</div>
+                  <div class="publication-meta">Dan Wang, Xinrui Cui*, Xun Chen, Zhengxia Zou, Tianyang Shi, Septimiu Salcudean, Z. Jane Wang, Rabab Ward</div>
+                  <div class="publication-note"><a href="https://danalaina.github.io/evolt_webpage/" target="_blank" rel="noreferrer">Website</a> / ICCV 2021</div>
+                </div>
+              </article>
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">Revisiting the Perception-Distortion Trade-off with Spatial-Semantic Guided Super-Resolution</div>
+                  <div class="publication-meta">Dan Wang, Haiyan Sun, Shan Du, Z. Jane Wang, Zhaochong An, Serge Belongie, Xinrui Cui*</div>
+                  <div class="publication-note"><a href="https://hssmac.github.io/SpaSemSR_web/" target="_blank" rel="noreferrer">Website</a> / arXiv 2026</div>
+                </div>
+              </article>
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">InNeRF: Learning Interpretable Radiance Fields for Generalizable 3D Scene Representation and Rendering</div>
+                  <div class="publication-meta">Dan Wang, Xinrui Cui*</div>
+                  <div class="publication-note"><a href="https://danalaina.github.io/InNeRF_webpage/" target="_blank" rel="noreferrer">Website</a> / ACM Multimedia 2024</div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="topic-group">
+            <h3>Explainable AI</h3>
+            <div class="publication-list">
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">Interpreting Bottom-Up Decision-Making of CNNs via Hierarchical Inference</div>
+                  <div class="publication-meta">Dan Wang, Xinrui Cui*, Xun Chen, Rabab Ward, Z. Jane Wang</div>
+                  <div class="publication-note"><a href="https://danalaina.github.io/chain_webpage/" target="_blank" rel="noreferrer">Website</a> / IEEE TIP 2021</div>
+                </div>
+              </article>
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">CHIP: Channel-Wise Disentangled Interpretation of Deep Convolutional Neural Networks</div>
+                  <div class="publication-meta">Xinrui Cui, Dan Wang, Z. Jane Wang</div>
+                  <div class="publication-note"><a href="https://danalaina.github.io/chip_webpage/" target="_blank" rel="noreferrer">Website</a> / IEEE TNNLS 2020</div>
+                </div>
+              </article>
+              <article class="publication">
+                <div class="teaser-box">Teaser / GIF</div>
+                <div>
+                  <div class="publication-title">Feature-Flow Interpretation of Deep Convolutional Neural Networks</div>
+                  <div class="publication-meta">Xinrui Cui, Dan Wang, Z. Jane Wang</div>
+                  <div class="publication-note"><a href="https://danalaina.github.io/flowin_webpage/" target="_blank" rel="noreferrer">Website</a> / IEEE Transactions on Multimedia 2020</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <h2>Contact</h2>
+        <p>
+          I welcome research collaborations and academic conversations related to computer vision, graphics,
+          machine learning, neural rendering, and interpretable AI. For research inquiries, please reach out through my academic profile or social links above.
+        </p>
+      </section>
+<!-- 
+      <div class="footer">Homepage updated to follow the simple layout and style cues of <a href="https://kovenyu.com/#about" target="_blank" rel="noreferrer">kovenyu.com/#about</a>.</div> -->
+    </main>
+
+    <script>
+      const revealItems = document.querySelectorAll(".reveal");
+      const navLinks = document.querySelectorAll(".nav-links a");
+      const sections = [...navLinks].map((link) =>
+        document.querySelector(link.getAttribute("href"))
+      );
+      const viewButtons = document.querySelectorAll("[data-view]");
+      const pubViews = document.querySelectorAll("[data-pub-view]");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      revealItems.forEach((item) => observer.observe(item));
+
+      const syncNav = () => {
+        const offset = window.scrollY + 90;
+        sections.forEach((section, index) => {
+          if (!section) return;
+          const active =
+            offset >= section.offsetTop &&
+            offset < section.offsetTop + section.offsetHeight;
+          navLinks[index].classList.toggle("active", active);
+        });
+      };
+
+      syncNav();
+      window.addEventListener("scroll", syncNav, { passive: true });
+
+      viewButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = button.dataset.view;
+          viewButtons.forEach((item) =>
+            item.classList.toggle("active", item === button)
+          );
+          pubViews.forEach((view) =>
+            view.classList.toggle("hidden", view.dataset.pubView !== target)
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
