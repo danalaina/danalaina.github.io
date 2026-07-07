@@ -271,6 +271,18 @@
         object-fit: cover;
       }
 
+      .teaser-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        max-width: 240px;
+      }
+
+      .teaser-stack .teaser-box {
+        max-width: none;
+      }
+
       .publication-title {
         font-weight: 600;
         font-size: 1.05rem;
@@ -499,13 +511,9 @@
             I obtained my Master's and Bachelor's degrees from Beihang University.
           </p>
           <p>
-            My research lies at the intersection of Computer Graphics, Computer Vision, and Artificial Intelligence, with the overarching goal of advancing AI systems that seamlessly integrate environmental understanding with adaptive interaction to enhance human life. I focus on developing next-generation 3D reconstruction and rendering methods for human characters and complex dynamic scenes. By unifying classical graphics principles with modern deep learning approaches, my work aims to build systems that are not only high-performing, but also interpretable and physically grounded.
+            My research lies at the intersection of computer vision, computer graphics, and artificial intelligence. I am broadly interested in enabling AI systems to perceive, reconstruct, understand, and interact with the physical world.
+            <!-- My research lies at the intersection of Computer Graphics, Computer Vision, and Artificial Intelligence, with the overarching goal of advancing AI systems that seamlessly integrate environmental understanding with adaptive interaction to enhance human life. I focus on developing next-generation 3D reconstruction and rendering methods for human characters and complex dynamic scenes. By unifying classical graphics principles with modern deep learning approaches, my work aims to build systems that are not only high-performing, but also interpretable and physically grounded. -->
           </p>
-
-          <div class="callout-recruitment">
-            <h4>🚀 Ph.D. Openings Available</h4>
-            <p>I am actively recruiting motivated Ph.D. students to join my research group, with openings expected as early as <strong>Spring 2027</strong> or <strong>Fall 2027</strong>. Please apply through the official Ph.D. application process at the University of Arizona and list my name in your application. You are also welcome to email me your CV/resume, transcripts, and a brief description of your research interests.</p>
-          </div>
         </div>
       </section>
 
@@ -518,6 +526,11 @@
           <li><strong>Explainable &amp; Trustworthy AI</strong>: Transform opaque neural models into transparent and interpretable systems with explicit semantic structure, ensuring reliable, controllable, and accountable AI-driven decisions.</li>
         </ol>
       </section>
+
+      <div class="callout-recruitment">
+        <h4>🚀 Ph.D. Openings Available</h4>
+        <p>I am actively recruiting motivated Ph.D. students to join my research group, with openings expected as early as <strong>Spring 2027</strong> or <strong>Fall 2027</strong>. Please apply through the official Ph.D. application process at the University of Arizona and list my name in your application. You are also welcome to email me your CV/resume, transcripts, and a brief description of your research interests.</p>
+      </div>
 
       <section class="reveal">
         <h2>Selected Awards</h2>
@@ -545,7 +558,7 @@
         </div>
         <p class="pub-note-line">(* indicates equal contributions)</p>
 
-        <div class="pub-view hidden" data-pub-view="selected">
+        <!-- <div class="pub-view hidden" data-pub-view="selected">
           <div class="publication-list">
             <article class="publication">
               <div class="teaser-box"><img src="images/publication_preview/teaser-physconvex.png" alt="PhysConvex teaser"></div>
@@ -652,12 +665,15 @@
               </div>
             </article>
           </div>
-        </div>
+        </div> -->
 
         <div class="pub-view" data-pub-view="date">
           <div class="publication-list">
             <article class="publication">
-              <div class="teaser-box"><img src="images/publication_preview/teaser-physconvex.png" alt="PhysConvex teaser"></div>
+              <div class="teaser-stack">
+                <div class="teaser-box"><img src="images/publication_preview/teaser-physconvex.png" alt="PhysConvex teaser"></div>
+                <div class="teaser-box"><video src="images/publication_preview/new_forces_falling.mp4" autoplay loop muted playsinline></video></div>
+              </div>
               <div>
                 <div class="publication-title">PhysConvex: Physics-Informed 3D Dynamic Convex Radiance Fields for Reconstruction and Simulation</div>
                 <div class="publication-meta"><strong>Dan Wang</strong>*, Xinrui Cui*, Serge Belongie, Ravi Ramamoorthi</div>
@@ -671,7 +687,10 @@
             </article>
 
             <article class="publication">
-              <div class="teaser-box"><video src="images/publication_preview/ArtMesh.mp4" autoplay loop muted playsinline></video></div>
+              <div class="teaser-stack">
+                <div class="teaser-box"><img src="images/publication_preview/teaser-artmesh.png" alt="ArtMesh teaser"></div>
+                <div class="teaser-box"><video src="images/publication_preview/ArtMesh.mp4" autoplay loop muted playsinline></video></div>
+              </div>
               <div>
                 <div class="publication-title">ArtMesh: Part-Aware Articulated Mesh Fields with Motion-Consistent Dynamics</div>
                 <div class="publication-meta">Sylvia Yuan*, <strong>Dan Wang*</strong>, Ravi Ramamoorthi, Xinrui Cui</div>
@@ -956,7 +975,7 @@
           </div>
         </div>
 
-        <div class="pub-view hidden" data-pub-view="topic">
+        <!-- <div class="pub-view hidden" data-pub-view="topic">
           <div class="topic-group">
             <h3>World Models / Physics-Grounded Dynamics</h3>
             <div class="publication-list">
@@ -1070,7 +1089,7 @@
               </article>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <section class="reveal">
